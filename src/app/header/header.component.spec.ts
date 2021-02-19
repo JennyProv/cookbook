@@ -22,4 +22,12 @@ describe('HeaderComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('#search() should set value true', () => {
+    expect(component.value).toBe(false, 'at first');
+    component.search();
+    expect(component.value).toBe(true, 'after click');
+    component.search();
+    expect(component.value).toBe(true, 'still true');
+  })
 });
