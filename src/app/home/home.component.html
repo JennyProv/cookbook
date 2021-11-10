@@ -1,43 +1,88 @@
 <app-header></app-header>
-  <div class="row">
-    <div class="leftcolumn">
-      <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Dec 7, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      </div>
-      <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <img class="fakeimg" src="assets/images/1.jpg" style="height:550px;" alt="instagram">
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+      </p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="row2">
+        <div class="content">
+          <img class="fakeimg" src="assets/images/2.jpg" style="height:550px;" alt="instagram">
+        </div>
+        <div class="content">
+          <p>Some text..</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco.</p>
+        </div>
       </div>
     </div>
-    <div class="rightcolumn">
-      <div class="card">      
-        <h2>Sozial media</h2>
-        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      </div>
-      <div class="card">      
-        <h2>Suche</h2>
-        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      </div>
-      <div class="card">
-        <h3>Popular Post</h3>
-        <div class="fakeimg">Image</div><br>
-        <div class="fakeimg">Image</div><br>
-        <div class="fakeimg">Image</div>
-      </div>
-      <div class="card">
-        <h3>Kategory</h3>
-        <p>Some text..</p>
-      </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <img class="fakeimg" src="assets/images/3.jpg" style="height:550px;" alt="instagram">
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+      </p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <img class="fakeimg" src="assets/images/4.jpg" style="height:550px;" alt="instagram">
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+      </p>
     </div>
   </div>
-  
-  <div class="footer">
-    <h2>Footer</h2>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Sozial media</h2>
+      <div class="topbar">
+        <a href="https://www.instagram.com" class="instagram">
+          <img src="assets/instagram.png" alt="instagram">
+        </a>
+        <a href="https://www.facebook.com" class="facebook">
+          <img src="assets/facebook.png" alt="facebook">
+        </a>
+        <a href="https://www.pinterest.com" class="pinterest">
+          <img src="assets/pinterest.png" alt="pinterest">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Suche</h2>
+      <div class="searchi">
+        <form>
+          <input type="text" id="search" name="search" placeholder="Suche.."><br>
+        </form>
+        <div class="search">
+          <img src="assets/search.svg" style="width: 30px;" alt="search" class="search" (click)="search()">
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Kategory</h3>
+      <p>Some text..</p>
+    </div>
   </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
