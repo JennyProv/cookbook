@@ -39,7 +39,7 @@
   
   /* Fake image */
   .fakeimg {
-    background-color: #c3dbcf;;
+    background-color: #c3dbcf;
     width: 30%;
     padding: 10px;
   }
@@ -66,14 +66,6 @@
     content: "";
     display: table;
     clear: both;
-  }
-  
-  /* Footer */
-  .footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
   }
 
   .row2::after {

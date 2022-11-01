@@ -18,6 +18,7 @@ import { RecipeComponent } from './recipe/recipe.component';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { BackendService } from './backend.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     BakingComponent,
     AboutComponent,
     ImpressumComponent,
-    RecipeComponent
+    RecipeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
