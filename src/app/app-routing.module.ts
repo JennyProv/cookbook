@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { CookingComponent } from './cooking/cooking.component';
+import { BakingComponent } from './baking/baking.component';
+import { AboutComponent } from './about/about.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 const routes: Routes = [
   {
@@ -11,23 +15,23 @@ const routes: Routes = [
   {
     path: 'start',
     component: HomeComponent,
-  }/* ,
+  },
   {
     path: 'kochnische',
-    component: cookingComponent,
+    component: CookingComponent,
   },
   {
     path: 'backstube',
-    component: bakingComponent,
+    component: BakingComponent,
   },
   {
     path: 'ueberuns',
-    component: aboutComponent,
+    component: AboutComponent,
   },
   {
     path: 'impressum',
-    component: impressumComponent,
-  }, */
+    component: ImpressumComponent,
+  },
 ];
 
 @NgModule({
