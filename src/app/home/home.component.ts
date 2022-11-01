@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RecipeService } from '../recipe/recipe.service';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,7 @@ export class HomeComponent implements OnInit {
   testMarkup: SafeHtml;
   public value: boolean = false;
 
-  constructor(private recipeService: RecipeService, private sanitized: DomSanitizer) {
+  constructor(private recipeService: RecipeService, private sanitized: DomSanitizer, private router: Router) {
     this.testMarkup = ''; 
   }
 
@@ -27,5 +28,12 @@ export class HomeComponent implements OnInit {
 
   search(){
     this.value = true;
+  }
+
+  navigateToRecipe(id : number){
+    console.log("given id is: ", id);
+    this.router.navigate(
+      [`/rezept/${id}`]
+    );
   }
 }
