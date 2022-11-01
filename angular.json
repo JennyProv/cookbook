@@ -117,5 +117,7 @@
       }
     }
   },
-  "defaultProject": "cookbook"
+  "cli": {
+    "analytics": false
+  }
 }
