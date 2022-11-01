@@ -22,7 +22,7 @@ const routes: Routes = [
     component: CookingComponent,
   },
   {
-    path: 'rezept/:name',
+    path: 'rezept/:id',
     component: RecipeComponent,
   },
   {
