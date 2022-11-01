@@ -19,6 +19,7 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { BackendService } from './backend.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FooterComponent } from './footer/footer.component';
     AboutComponent,
     ImpressumComponent,
     RecipeComponent,
-    FooterComponent
+    FooterComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

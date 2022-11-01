@@ -11,7 +11,6 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
   recipes: any[] = [];
   testMarkup: SafeHtml;
-  public value: boolean = false;
 
   constructor(private recipeService: RecipeService, private sanitized: DomSanitizer, private router: Router) {
     this.testMarkup = ''; 
@@ -24,10 +23,6 @@ export class HomeComponent implements OnInit {
         this.recipes[i].shortdescription = this.sanitized.bypassSecurityTrustHtml(this.recipes[i].shortdescription);
       }
   })
-  }
-
-  search(){
-    this.value = true;
   }
 
   navigateToRecipe(id : number){
