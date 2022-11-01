@@ -10,12 +10,22 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { CookingComponent } from './cooking/cooking.component';
+import { BakingComponent } from './baking/baking.component';
+import { AboutComponent } from './about/about.component';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { RecipeComponent } from './recipe/recipe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    CookingComponent,
+    BakingComponent,
+    AboutComponent,
+    ImpressumComponent,
+    RecipeComponent
   ],
   imports: [
     BrowserModule,
