@@ -5,6 +5,7 @@ import { CookingComponent } from './cooking/cooking.component';
 import { BakingComponent } from './baking/baking.component';
 import { AboutComponent } from './about/about.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { RecipeComponent } from './recipe/recipe.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path: 'kochnische',
     component: CookingComponent,
+  },
+  {
+    path: 'rezept/:name',
+    component: RecipeComponent,
   },
   {
     path: 'backstube',

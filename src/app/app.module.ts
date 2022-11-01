@@ -14,6 +14,7 @@ import { CookingComponent } from './cooking/cooking.component';
 import { BakingComponent } from './baking/baking.component';
 import { AboutComponent } from './about/about.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { RecipeComponent } from './recipe/recipe.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ImpressumComponent } from './impressum/impressum.component';
     CookingComponent,
     BakingComponent,
     AboutComponent,
-    ImpressumComponent
+    ImpressumComponent,
+    RecipeComponent
   ],
   imports: [
     BrowserModule,
