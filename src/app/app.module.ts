@@ -15,6 +15,9 @@ import { BakingComponent } from './baking/baking.component';
 import { AboutComponent } from './about/about.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { RecipeComponent } from './recipe/recipe.component';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { BackendService } from './backend.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,9 @@ import { RecipeComponent } from './recipe/recipe.component';
     FormsModule,
     ReactiveFormsModule,
     MatNativeDateModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    InMemoryWebApiModule.forRoot(BackendService)
   ],
   providers: [{provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' }}],
   bootstrap: [AppComponent]
