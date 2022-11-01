@@ -28,6 +28,7 @@
   .leftcolumn { 
     width: 60%;
     justify-content: center;
+    cursor: pointer;
   }
   
   /* Right column */

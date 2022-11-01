@@ -15,7 +15,7 @@ export class RecipeService {
    return this.http.get(this.API_URL + 'recipes')
   }
 
-  getRecipe(recipeId: number) {
-   return this.http.get(`${this.API_URL + 'recipe'}/${recipeId}`) 
+  getRecipe(id: any) {
+   return this.http.get(`${this.API_URL + 'recipes'}/${id}`) 
   }
 }
