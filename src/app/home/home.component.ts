@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
     this.recipeService.getRecipes().subscribe((data : any)=>{
       this.recipes = data;
       for (let i = 0; i < this.recipes.length; i++) {
-        this.recipes[i].description = this.sanitized.bypassSecurityTrustHtml(this.recipes[i].description);
+        this.recipes[i].shortdescription = this.sanitized.bypassSecurityTrustHtml(this.recipes[i].shortdescription);
       }
   })
   }
