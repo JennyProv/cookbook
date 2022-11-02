@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { CookingComponent } from './cooking/cooking.component';
-import { BakingComponent } from './baking/baking.component';
-import { AboutComponent } from './about/about.component';
-import { ImpressumComponent } from './impressum/impressum.component';
-import { RecipeComponent } from './recipe/recipe.component';
+import { HomeComponent } from './core/components/home/home.component';
+import { CookingComponent } from './core/components/cooking/cooking.component';
+import { BakingComponent } from './core/components/baking/baking.component';
+import { AboutComponent } from './core/components/about/about.component';
+import { ImpressumComponent } from './core/components/impressum/impressum.component';
+import { RecipeDetailViewComponent } from './features/recipes/components/recipe-detail-view/recipe-detail-view.component';
 
 const routes: Routes = [
   {
@@ -23,7 +23,7 @@ const routes: Routes = [
   },
   {
     path: 'rezept/:id',
-    component: RecipeComponent,
+    component: RecipeDetailViewComponent,
   },
   {
     path: 'backstube',

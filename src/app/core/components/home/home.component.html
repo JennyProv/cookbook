@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="leftcolumn" >
+      <div class="recipe-card" *ngFor="let recipe of recipes" (click)="navigateToRecipe(recipe.id)">
+        <h2>{{ recipe.title }}</h2>
+        <h4>{{ recipe.subtitle }}</h4>
+        <h5>{{ recipe.date }}</h5>
+        <img class="fakeimg" src="{{ recipe.imgUrl }}" style="height:550px; width: 350px;" alt="instagram">
+        <div [innerHtml]="recipe.shortDescription"></div>
+      </div>
+  </div>
+  <app-sidebar></app-sidebar>
+</div>

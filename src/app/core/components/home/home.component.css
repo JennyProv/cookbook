@@ -1,0 +1,29 @@
+  .row {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn { 
+    width: 60%;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  /* Fake image */
+  .fakeimg {
+    background-color: #c3dbcf;
+    width: 30%;
+    padding: 10px;
+  }
+
+  .recipe-card {
+    background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    padding: 20px;
+    margin-top: 20px;
+    justify-content: center;
+ }
