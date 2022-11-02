@@ -18,8 +18,8 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.recipeService.getRecipes().subscribe((data : any)=>{
-      this.recipes = data;
+    this.recipeService.getRecipes().subscribe((recipes)=>{
+      this.recipes = recipes;
       for (let i = 0; i < this.recipes.length; i++) {
         this.recipes[i].shortDescription = this.sanitized.bypassSecurityTrustHtml(this.recipes[i].shortDescription) as unknown as string;
       }
@@ -27,7 +27,6 @@ export class HomeComponent implements OnInit {
   }
 
   navigateToRecipe(id : number){
-    console.log("given id is: ", id);
     this.router.navigate(
       [`/rezept/${id}`]
     );
