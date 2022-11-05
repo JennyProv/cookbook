@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
   })
   }
 
-  navigateToRecipe(id : number){
+  navigateToRecipe(id : number) : void {
     this.router.navigate(
       [`/rezept/${id}`]
     );
