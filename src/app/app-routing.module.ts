@@ -6,6 +6,7 @@ import { BakingComponent } from './core/components/baking/baking.component';
 import { AboutComponent } from './core/components/about/about.component';
 import { ImpressumComponent } from './core/components/impressum/impressum.component';
 import { RecipeDetailViewComponent } from './features/recipes/components/recipe-detail-view/recipe-detail-view.component';
+import { BlogComponent } from './core/components/blog/blog.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'impressum',
     component: ImpressumComponent,
+  },
+  {
+    path: 'blog',
+    component: BlogComponent,
   },
 ];
 

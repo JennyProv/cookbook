@@ -21,7 +21,7 @@ export class RecipeService {
     return this.$recipes
   }
 
-  getRecipe(id: any) : Observable<Recipe> {
+  getRecipe(id: string | null) : Observable<Recipe> {
    return this.http.get(`${this.API_URL + 'recipes'}/${id}`) as Observable<Recipe>
   }
 }

@@ -20,6 +20,7 @@ import { BackendService } from './backend/backend.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './core/components/footer/footer.component';
 import { SidebarComponent } from './core/components/sidebar/sidebar.component';
+import { BlogComponent } from './core/components/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { SidebarComponent } from './core/components/sidebar/sidebar.component';
     ImpressumComponent,
     RecipeDetailViewComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
