@@ -1,11 +1,11 @@
 <div class="row">
     <div class="leftcolumn" >
         <div class="recipe-card">
-          <h2>{{ recipe?.title }}</h2>
-          <h4>{{ recipe?.subtitle }}</h4>
-          <h5>{{ recipe?.date }}</h5>
-          <img class="fakeimg" src="{{ recipe?.imgUrl }}" style="height:550px; width: 350px;" alt="instagram">
-          <div [innerHtml]="recipe?.description"></div>
+          <h2>{{ (recipe$ | async)?.title }}</h2>
+          <h4>{{ (recipe$ | async)?.subtitle }}</h4>
+          <h5>{{ (recipe$ | async)?.date }}</h5>
+          <img class="fakeimg" src="{{ (recipe$ | async)?.imgUrl }}" style="height:550px; width: 350px;" alt="instagram">
+          <div [innerHtml]="(recipe$ | async)?.description"></div>
         </div>
     </div>
     <app-sidebar></app-sidebar>
